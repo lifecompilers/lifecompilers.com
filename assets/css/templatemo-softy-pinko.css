@@ -1587,3 +1587,14 @@ preloader
     opacity: 0;
   }
 }
+
+.fa-128 {
+  font-size: 128px;
+  color: #006D5B;
+  transform: rotate(-45deg);
+  text-shadow: -5px 0px 1px #333;
+}
+
+.img-header {
+  height: 200px;
+}
