@@ -863,7 +863,6 @@ parallax & home seperator
 
 .mini .mini-content .info {
   text-align: center;
-  color: #fff;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -883,7 +882,6 @@ parallax & home seperator
 }
 
 .mini .mini-content .info h1 {
-  color: #fff;
   font-weight: 500;
   font-size: 28px;
   letter-spacing: 0.25px;
@@ -893,7 +891,6 @@ parallax & home seperator
 .mini .mini-content .info p {
   letter-spacing: 1px;
   margin-bottom: 40px;
-  color: #fff;
   letter-spacing: 0.25px;
   line-height: 26px;
   font-weight: 400;
