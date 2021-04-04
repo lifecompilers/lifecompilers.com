@@ -81,7 +81,7 @@ header, nav, section, article, aside, footer, hgroup {
 html, body {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  background-color: honeydew;
+  /* background-color: honeydew; */
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -108,7 +108,7 @@ global styles
 */
 html,
 body {
-  background: honeydew;
+  /* background: honeydew; */
   font-family: "Raleway", sans-serif;
 }
 
@@ -1592,13 +1592,13 @@ preloader
 }
 
 #work-process {
-  background-color: honeydew;
+  /* background-color: honeydew; */
 }
 
 #testimonials {
-  background-color: honeydew;
+  /* background-color: honeydew; */
 }
 
 .section.colored {
-  background-color: honeydew;
+  /* background-color: honeydew; */
 }
