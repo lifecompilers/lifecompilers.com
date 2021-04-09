@@ -79,7 +79,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: "Play", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   /* background-color: honeydew; */
   font-size: 16px;
@@ -109,7 +109,7 @@ global styles
 html,
 body {
   /* background: honeydew; */
-  font-family: "Play", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 ::selection {
