@@ -1,0 +1,19 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "LifeCOMPILERS",
+  "short_name": "LifeCOMPILERS",
+  "scope": "/",
+  "display": "browser",
+  "start_url": "https://lifecompilers.com/",
+  "background_color": "#000000",
+  "theme_color": "transparent",
+  "description": "We design & develop intuitive and user-friendly web-based apps and desktop & mobile applications, and much more...",
+  "orientation": "any",
+  "related_applications": [],
+  "prefer_related_applications": "false",
+  "icons": [],
+  "url": "https://lifecompilers.com",
+  "generated": true,
+  "screenshots": []
+}
