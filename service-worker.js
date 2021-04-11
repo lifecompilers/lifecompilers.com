@@ -6,7 +6,7 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     fetch(indexPage).then(function (response) {
       return caches.open('react-pwa').then(function (cache) {
-        console.log('[React PWA] Cached index page during Install' + response.url);
+        console.log('LifeCOMPILERS Cached index page during Install' + response.url);
         return cache.put(indexPage, response);
       });
     }));
@@ -17,7 +17,7 @@ self.addEventListener('fetch', function (event) {
   var updateCache = function (request) {
     return caches.open('react-pwa').then(function (cache) {
       return fetch(request).then(function (response) {
-        console.log('[React PWA] add page to offline' + response.url)
+        console.log('LifeCOMPILERS add page to offline' + response.url)
         return cache.put(request, response);
       });
     });
@@ -27,7 +27,7 @@ self.addEventListener('fetch', function (event) {
 
   event.respondWith(
     fetch(event.request).catch(function (error) {
-      console.log('[React PWA] Network request Failed. Serving content from cache: ' + error);
+      console.log('LifeCOMPILERS Network request Failed. Serving content from cache: ' + error);
 
       //Check to see if you have it in the cache
       //Return response
