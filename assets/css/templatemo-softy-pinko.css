@@ -953,8 +953,10 @@ parallax & home seperator
 
 .mini .mini-content .mini-box i {
   display: block;
-  font-size: 20px;
+  font-size: 40px;
   margin-bottom: 15px;
+  color: #006D5B;
+  transform: rotate(270deg);
 }
 
 .mini .mini-content .mini-box span {
@@ -1131,10 +1133,9 @@ team
 
 .team-item i {
   display: block;
-  margin-left: 25px;
   margin-top: 25px;
-  font-size: 30px;
-  color: #4E47DE;
+  font-size: 48px;
+  color: #006D5B;
   text-align: center;
 }
 
