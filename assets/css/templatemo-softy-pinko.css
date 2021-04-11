@@ -1517,9 +1517,9 @@ preloader
 #preloader {
   overflow: hidden;
   background-image: linear-gradient(135deg, #006D5B 0%, #006D5B 100%);
-  left: 0;
+  left: -150px;
   right: 0;
-  top: 0;
+  top: -150px;
   bottom: 0;
   position: fixed;
   z-index: 9999;
@@ -1540,15 +1540,15 @@ preloader
 
 #preloader .jumper > div {
   background-color: #EF1C4D;
-  width: 10px;
-  height: 10px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   position: absolute;
   opacity: 0;
-  width: 50px;
-  height: 50px;
+  width: 200px;
+  height: 200px;
   -webkit-animation: jumper 1s 0s linear infinite;
   animation: jumper 1s 0s linear infinite;
 }
