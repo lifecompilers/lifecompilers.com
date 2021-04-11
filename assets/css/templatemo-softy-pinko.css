@@ -404,6 +404,8 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  height: 64px;
+  width: 64px;
 }
 
 .header-area .main-nav .nav {
@@ -544,7 +546,16 @@ header
 }
 
 .header-area.header-sticky .logo {
-  margin-top: 15px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header-area.header-sticky .logo-title {
+  font-size: 40px;
+  color: #3B566E;
+  font-weight: 600;
 }
 
 .header-area.header-sticky .nav {
@@ -580,8 +591,15 @@ header
     padding: 0px;
   }
   .header-area .logo {
-    margin-top: 17px !important;
-    margin-left: 30px;
+    margin-top: 16px !important;
+    margin-left: 30px !important;
+  }
+  .header-area .logo img {
+    height: 48px !important;
+    width: 48px !important;
+  }
+  .header-area .logo-title {
+    font-size: 28px !important;
   }
   .header-area .menu-trigger {
     display: block !important;
