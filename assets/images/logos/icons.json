@@ -1,17 +1,4 @@
 {
-  "dir": "ltr",
-  "lang": "en",
-  "name": "LifeCOMPILERS",
-  "short_name": "LifeCOMPILERS",
-  "scope": "/",
-  "display": "standalone",
-  "start_url": "https://lifecompilers.com/",
-  "background_color": "#000000",
-  "theme_color": "transparent",
-  "description": "We design & develop intuitive and user-friendly web-based apps and desktop & mobile applications, and much more...",
-  "orientation": "any",
-  "related_applications": [],
-  "prefer_related_applications": "false",
   "icons": [
     {
       "src": "assets/images/logoswindows10/SmallTile.scale-100.png",
@@ -517,8 +504,5 @@
       "src": "assets/images/logosfirefox/firefox-general-16-16.png",
       "sizes": "16x16"
     }
-  ],
-  "url": "https://lifecompilers.com",
-  "generated": true,
-  "screenshots": []
+  ]
 }
