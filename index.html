@@ -17,7 +17,8 @@
 
     <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css">
 
-    <link rel="manifest" href="manifest.json"></link>
+    <link rel="manifest" href="manifest.json">
+    </link>
 
 </head>
 
@@ -373,8 +374,8 @@
                     <h5 class="margin-bottom-30">Keep in touch</h5>
                     <div class="contact-text">
                         <p>
-                            1239(A),<br/>
-                            Sawant Nagar, Nachane, Ratnagiri,<br/>
+                            1239(A),<br />
+                            Sawant Nagar, Nachane, Ratnagiri,<br />
                             Maharashtra, INDIA
                         </p>
                     </div>
@@ -456,6 +457,14 @@
 
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('pwabuilder-sw.js');
+            });
+        }
+    </script>
 
 </body>
 
