@@ -78,7 +78,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Verdana", sans-serif;
   font-weight: 400;
   /* background-color: honeydew; */
   font-size: 16px;
@@ -108,7 +108,7 @@ global styles
 html,
 body {
   /* background: honeydew; */
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Verdana", sans-serif;
 }
 
 ::selection {
