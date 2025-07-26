@@ -350,9 +350,9 @@ export default function HomePage() {
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
                   <span className="text-white/90 font-inter text-lg">
-                    1234 Innovation Drive, Suite 567
+                    1239(A), Sawant Nagar, Nachane
                     <br />
-                    Austin, TX 78701
+                    Ratnagiri, Maharashtra, INDIA
                   </span>
                 </div>
               </div>
