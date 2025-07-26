@@ -2,9 +2,6 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   Code2,
-  Smartphone,
-  Monitor,
-  Globe,
   Users,
   MessageSquare,
   ArrowRight,
@@ -56,7 +53,7 @@ export default function HomePage() {
                 </span>
               </Link>
               <Link
-                href="#about"
+                href="#partner-approach"
                 className="relative px-4 py-2 text-white/90 hover:text-white transition-all duration-300 ease-out group overflow-hidden rounded-full font-space-grotesk font-medium tracking-wide"
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-violet-500/20 to-cyan-500/20 backdrop-blur-sm scale-0 group-hover:scale-100 transition-transform duration-300 ease-out rounded-full border border-white/30" />
@@ -66,13 +63,13 @@ export default function HomePage() {
                 </span>
               </Link>
               <Link
-                href="#services"
+                href="#work-process"
                 className="relative px-4 py-2 text-white/90 hover:text-white transition-all duration-300 ease-out group overflow-hidden rounded-full font-space-grotesk font-medium tracking-wide"
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-violet-500/20 to-cyan-500/20 backdrop-blur-sm scale-0 group-hover:scale-100 transition-transform duration-300 ease-out rounded-full border border-white/30" />
                 <span className="absolute inset-0 bg-gradient-to-r from-white/5 via-violet-300/10 to-cyan-300/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
                 <span className="relative z-10 group-hover:drop-shadow-lg transform group-hover:scale-105 transition-transform duration-200">
-                  Services
+                  Work Process
                 </span>
               </Link>
               <Link
@@ -129,67 +126,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="relative px-4 py-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Mobile App Development */}
-            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-violet-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <Smartphone className="h-8 w-8 text-white" />
-                </div>
-                <CardTitle className="text-xl font-space-grotesk font-bold tracking-tight">
-                  Mobile App Development
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardDescription className="text-white/80 leading-relaxed font-inter">
-                  Achieve measurable business results by developing custom scalable and featured-rich mobile
-                  applications.
-                </CardDescription>
-              </CardContent>
-            </Card>
-
-            {/* Web Development */}
-            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 hover:scale-105">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <Globe className="h-8 w-8 text-white" />
-                </div>
-                <CardTitle className="text-xl font-space-grotesk font-bold tracking-tight">Web Development</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardDescription className="text-white/80 leading-relaxed font-inter">
-                  Revolutionize your business ideas using web development services for innovative and next-gen
-                  applications.
-                </CardDescription>
-              </CardContent>
-            </Card>
-
-            {/* Desktop App Development */}
-            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all duration-300 hover:scale-105">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                  <Monitor className="h-8 w-8 text-white" />
-                </div>
-                <CardTitle className="text-xl font-space-grotesk font-bold tracking-tight">
-                  Desktop App Development
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardDescription className="text-white/80 leading-relaxed font-inter">
-                  Translate unique client requirements into custom desktop applications with premier quality and
-                  advanced technologies.
-                </CardDescription>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Partner Approach Section */}
-      <section className="relative px-4 py-16">
+      <section id="partner-approach" className="relative px-4 py-16">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
