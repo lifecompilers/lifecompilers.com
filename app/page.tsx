@@ -76,6 +76,26 @@ export default function HomePage() {
                 </span>
               </Link>
               <Link
+                href="#product-mindset"
+                className="relative px-4 py-2 text-white/90 hover:text-white transition-all duration-300 ease-out group overflow-hidden rounded-full font-space-grotesk font-medium tracking-wide"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-violet-500/20 to-cyan-500/20 backdrop-blur-sm scale-0 group-hover:scale-100 transition-transform duration-300 ease-out rounded-full border border-white/30" />
+                <span className="absolute inset-0 bg-gradient-to-r from-white/5 via-violet-300/10 to-cyan-300/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
+                <span className="relative z-10 group-hover:drop-shadow-lg transform group-hover:scale-105 transition-transform duration-200">
+                  Product Mindset
+                </span>
+              </Link>
+              <Link
+                href="#work-process"
+                className="relative px-4 py-2 text-white/90 hover:text-white transition-all duration-300 ease-out group overflow-hidden rounded-full font-space-grotesk font-medium tracking-wide"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-violet-500/20 to-cyan-500/20 backdrop-blur-sm scale-0 group-hover:scale-100 transition-transform duration-300 ease-out rounded-full border border-white/30" />
+                <span className="absolute inset-0 bg-gradient-to-r from-white/5 via-violet-300/10 to-cyan-300/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
+                <span className="relative z-10 group-hover:drop-shadow-lg transform group-hover:scale-105 transition-transform duration-200">
+                  Work Process
+                </span>
+              </Link>
+              <Link
                 href="#testimonials"
                 className="relative px-4 py-2 text-white/90 hover:text-white transition-all duration-300 ease-out group overflow-hidden rounded-full font-space-grotesk font-medium tracking-wide"
               >
@@ -181,6 +201,151 @@ export default function HomePage() {
                 <CardDescription className="text-white/80 leading-relaxed font-inter">
                   Translate unique client requirements into custom desktop applications with premier quality and
                   advanced technologies.
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Mindset Section */}
+      <section
+        id="product-mindset"
+        className="relative px-4 py-16 bg-gradient-to-r from-white/5 via-emerald-500/5 to-teal-500/5 backdrop-blur-sm"
+      >
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white text-center mb-12 bg-gradient-to-r from-white via-emerald-200 to-teal-200 bg-clip-text text-transparent tracking-tight">
+            Product Mindset
+          </h2>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-white">
+              <h3 className="text-3xl font-space-grotesk font-bold mb-6 bg-gradient-to-r from-white to-emerald-200 bg-clip-text text-transparent tracking-tight">
+                Building Solutions That Matter
+              </h3>
+              <p className="text-xl text-white/90 mb-8 leading-relaxed font-inter font-light">
+                We don't just write code - we build products that solve real problems. Our product mindset ensures every
+                feature we develop adds genuine value to your business and your users.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">User-Centric Design Approach</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">Data-Driven Decision Making</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">Continuous Improvement Focus</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">Market-Ready Solutions</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-64 h-64 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 shadow-2xl">
+                <div className="w-32 h-32 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full flex items-center justify-center">
+                  <Code2 className="h-16 w-16 text-white" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Work Process Section */}
+      <section id="work-process" className="relative px-4 py-16">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white text-center mb-12 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent tracking-tight">
+            Our Work Process
+          </h2>
+          <p className="text-xl text-white/90 text-center mb-16 max-w-3xl mx-auto leading-relaxed font-inter font-light">
+            We follow a structured approach to ensure your project is delivered on time, within budget, and exceeds your
+            expectations.
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Step 1 */}
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300 hover:scale-105 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                1
+              </div>
+              <CardHeader className="text-center pt-8 pb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <MessageSquare className="h-8 w-8 text-white" />
+                </div>
+                <CardTitle className="text-xl font-space-grotesk font-bold tracking-tight">
+                  Discovery & Planning
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <CardDescription className="text-white/80 leading-relaxed font-inter">
+                  We start by understanding your business goals, target audience, and project requirements through
+                  detailed discussions and research.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            {/* Step 2 */}
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all duration-300 hover:scale-105 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                2
+              </div>
+              <CardHeader className="text-center pt-8 pb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Users className="h-8 w-8 text-white" />
+                </div>
+                <CardTitle className="text-xl font-space-grotesk font-bold tracking-tight">
+                  Design & Prototyping
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <CardDescription className="text-white/80 leading-relaxed font-inter">
+                  Our design team creates wireframes, mockups, and interactive prototypes to visualize your solution
+                  before development begins.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            {/* Step 3 */}
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-violet-500/20 hover:shadow-violet-500/40 transition-all duration-300 hover:scale-105 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gradient-to-r from-violet-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                3
+              </div>
+              <CardHeader className="text-center pt-8 pb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-violet-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Code2 className="h-8 w-8 text-white" />
+                </div>
+                <CardTitle className="text-xl font-space-grotesk font-bold tracking-tight">
+                  Development & Testing
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <CardDescription className="text-white/80 leading-relaxed font-inter">
+                  We build your solution using cutting-edge technologies and conduct thorough testing to ensure quality
+                  and performance.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            {/* Step 4 */}
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 hover:scale-105 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                4
+              </div>
+              <CardHeader className="text-center pt-8 pb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <CheckCircle className="h-8 w-8 text-white" />
+                </div>
+                <CardTitle className="text-xl font-space-grotesk font-bold tracking-tight">Launch & Support</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <CardDescription className="text-white/80 leading-relaxed font-inter">
+                  We deploy your solution and provide ongoing support, maintenance, and updates to ensure continued
+                  success.
                 </CardDescription>
               </CardContent>
             </Card>
