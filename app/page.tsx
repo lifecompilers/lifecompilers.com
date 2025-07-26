@@ -17,15 +17,25 @@ import {
   Instagram,
   Linkedin,
   Github,
+  Menu,
+  X,
 } from "lucide-react"
 import Link from "next/link"
+import { useState } from "react"
 
 export default function HomePage() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
+      setIsMobileMenuOpen(false) // Close mobile menu after navigation
     }
+  }
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen)
   }
 
   return (
@@ -50,6 +60,8 @@ export default function HomePage() {
                 LifeCOMPILERS
               </span>
             </div>
+
+            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-2 relative z-10">
               <button
                 onClick={() => scrollToSection("home")}
@@ -102,9 +114,65 @@ export default function HomePage() {
                 </span>
               </button>
             </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={toggleMobileMenu}
+              className="md:hidden relative z-10 p-2 text-white hover:text-white/80 transition-colors duration-200"
+              aria-label="Toggle mobile menu"
+            >
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </nav>
+
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden absolute top-full left-4 right-4 mt-2 bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl shadow-purple-500/20 rounded-2xl overflow-hidden z-50">
+              <div className="absolute inset-0 bg-gradient-to-r from-violet-500/10 via-transparent to-cyan-500/10 pointer-events-none" />
+              <div className="relative z-10 py-4">
+                <button
+                  onClick={() => scrollToSection("home")}
+                  className="block w-full px-6 py-3 text-left text-white/90 hover:text-white hover:bg-white/10 transition-all duration-200 font-space-grotesk font-medium tracking-wide"
+                >
+                  Home
+                </button>
+                <button
+                  onClick={() => scrollToSection("partner-approach")}
+                  className="block w-full px-6 py-3 text-left text-white/90 hover:text-white hover:bg-white/10 transition-all duration-200 font-space-grotesk font-medium tracking-wide"
+                >
+                  About
+                </button>
+                <button
+                  onClick={() => scrollToSection("work-process")}
+                  className="block w-full px-6 py-3 text-left text-white/90 hover:text-white hover:bg-white/10 transition-all duration-200 font-space-grotesk font-medium tracking-wide"
+                >
+                  Work Process
+                </button>
+                <button
+                  onClick={() => scrollToSection("testimonials")}
+                  className="block w-full px-6 py-3 text-left text-white/90 hover:text-white hover:bg-white/10 transition-all duration-200 font-space-grotesk font-medium tracking-wide"
+                >
+                  Testimonials
+                </button>
+                <button
+                  onClick={() => scrollToSection("contact")}
+                  className="block w-full px-6 py-3 text-left text-white/90 hover:text-white hover:bg-white/10 transition-all duration-200 font-space-grotesk font-medium tracking-wide"
+                >
+                  Contact Us
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </header>
+
+      {/* Overlay for mobile menu */}
+      {isMobileMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/20 backdrop-blur-sm z-40 md:hidden"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
 
       {/* Hero Section */}
       <section id="home" className="relative px-4 py-20 lg:py-32">
