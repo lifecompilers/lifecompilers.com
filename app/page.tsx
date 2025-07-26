@@ -369,23 +369,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section
-        id="about"
-        className="relative px-4 py-16 bg-gradient-to-r from-white/5 via-violet-500/5 to-cyan-500/5 backdrop-blur-sm"
-      >
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white mb-8 bg-gradient-to-r from-white via-violet-200 to-cyan-200 bg-clip-text text-transparent tracking-tight">
-            About LifeCOMPILERS
-          </h2>
-          <p className="text-xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed font-inter font-light">
-            With years of experience in software development, we've helped businesses of all sizes transform their ideas
-            into powerful digital solutions. Our team of expert developers, designers, and strategists work together to
-            deliver exceptional results.
-          </p>
-        </div>
-      </section>
-
       {/* Testimonials Section */}
       <section id="testimonials" className="relative px-4 py-16">
         <div className="max-w-6xl mx-auto">
