@@ -76,26 +76,6 @@ export default function HomePage() {
                 </span>
               </Link>
               <Link
-                href="#product-mindset"
-                className="relative px-4 py-2 text-white/90 hover:text-white transition-all duration-300 ease-out group overflow-hidden rounded-full font-space-grotesk font-medium tracking-wide"
-              >
-                <span className="absolute inset-0 bg-gradient-to-r from-violet-500/20 to-cyan-500/20 backdrop-blur-sm scale-0 group-hover:scale-100 transition-transform duration-300 ease-out rounded-full border border-white/30" />
-                <span className="absolute inset-0 bg-gradient-to-r from-white/5 via-violet-300/10 to-cyan-300/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
-                <span className="relative z-10 group-hover:drop-shadow-lg transform group-hover:scale-105 transition-transform duration-200">
-                  Product Mindset
-                </span>
-              </Link>
-              <Link
-                href="#work-process"
-                className="relative px-4 py-2 text-white/90 hover:text-white transition-all duration-300 ease-out group overflow-hidden rounded-full font-space-grotesk font-medium tracking-wide"
-              >
-                <span className="absolute inset-0 bg-gradient-to-r from-violet-500/20 to-cyan-500/20 backdrop-blur-sm scale-0 group-hover:scale-100 transition-transform duration-300 ease-out rounded-full border border-white/30" />
-                <span className="absolute inset-0 bg-gradient-to-r from-white/5 via-violet-300/10 to-cyan-300/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
-                <span className="relative z-10 group-hover:drop-shadow-lg transform group-hover:scale-105 transition-transform duration-200">
-                  Work Process
-                </span>
-              </Link>
-              <Link
                 href="#testimonials"
                 className="relative px-4 py-2 text-white/90 hover:text-white transition-all duration-300 ease-out group overflow-hidden rounded-full font-space-grotesk font-medium tracking-wide"
               >
