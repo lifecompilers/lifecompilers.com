@@ -188,6 +188,42 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Partner Approach Section */}
+      <section className="relative px-4 py-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-white">
+              <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold mb-6 bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent tracking-tight">
+                Partner Approach
+              </h2>
+              <p className="text-xl text-white/90 mb-8 leading-relaxed font-inter font-light">
+                We are driven by 'Customer success' culture and don't think of ourselves as a service provider but your
+                technology partner who is committed to your success.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">Collaborative Development Process</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">Transparent Communication</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">Long-term Partnership Focus</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-64 h-64 bg-gradient-to-br from-violet-500/20 to-cyan-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 shadow-2xl">
+                <MessageSquare className="h-32 w-32 text-white/60" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Product Mindset Section */}
       <section
         id="product-mindset"
@@ -333,59 +369,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Partner Approach Section */}
-      <section className="relative px-4 py-16">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white">
-              <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold mb-6 bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent tracking-tight">
-                Partner Approach
-              </h2>
-              <p className="text-xl text-white/90 mb-8 leading-relaxed font-inter font-light">
-                We are driven by 'Customer success' culture and don't think of ourselves as a service provider but your
-                technology partner who is committed to your success.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-emerald-400" />
-                  <span className="text-white/90 font-inter">Collaborative Development Process</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-emerald-400" />
-                  <span className="text-white/90 font-inter">Transparent Communication</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-emerald-400" />
-                  <span className="text-white/90 font-inter">Long-term Partnership Focus</span>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="w-64 h-64 bg-gradient-to-br from-violet-500/20 to-cyan-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 shadow-2xl">
-                <MessageSquare className="h-32 w-32 text-white/60" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section
-        id="about"
-        className="relative px-4 py-16 bg-gradient-to-r from-white/5 via-violet-500/5 to-cyan-500/5 backdrop-blur-sm"
-      >
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white mb-8 bg-gradient-to-r from-white via-violet-200 to-cyan-200 bg-clip-text text-transparent tracking-tight">
-            About LifeCOMPILERS
-          </h2>
-          <p className="text-xl text-white/90 mb-12 max-w-4xl mx-auto leading-relaxed font-inter font-light">
-            With years of experience in software development, we've helped businesses of all sizes transform their ideas
-            into powerful digital solutions. Our team of expert developers, designers, and strategists work together to
-            deliver exceptional results.
-          </p>
-        </div>
-      </section>
-
       {/* Testimonials Section */}
       <section id="testimonials" className="relative px-4 py-16">
         <div className="max-w-6xl mx-auto">
@@ -441,16 +424,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
           </div>
-        </div>
-      </section>
-
-      {/* Statistics Section */}
-      <section className="relative px-4 py-16 bg-gradient-to-r from-white/5 via-violet-500/5 to-cyan-500/5 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white mb-12 bg-gradient-to-r from-white via-violet-200 to-cyan-200 bg-clip-text text-transparent tracking-tight">
-            Our Achievements
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 pt-16">
             <div className="text-center p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl backdrop-blur-sm border border-white/20">
               <div className="text-5xl font-space-grotesk font-black text-transparent bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text mb-2 tracking-tighter">
                 50+
