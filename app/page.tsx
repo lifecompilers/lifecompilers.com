@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   Code2,
+  Smartphone,
+  Monitor,
+  Globe,
   Users,
   MessageSquare,
   ArrowRight,
@@ -63,13 +66,13 @@ export default function HomePage() {
                 </span>
               </Link>
               <Link
-                href="#work-process"
+                href="#services"
                 className="relative px-4 py-2 text-white/90 hover:text-white transition-all duration-300 ease-out group overflow-hidden rounded-full font-space-grotesk font-medium tracking-wide"
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-violet-500/20 to-cyan-500/20 backdrop-blur-sm scale-0 group-hover:scale-100 transition-transform duration-300 ease-out rounded-full border border-white/30" />
                 <span className="absolute inset-0 bg-gradient-to-r from-white/5 via-violet-300/10 to-cyan-300/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full" />
                 <span className="relative z-10 group-hover:drop-shadow-lg transform group-hover:scale-105 transition-transform duration-200">
-                  Work Process
+                  Services
                 </span>
               </Link>
               <Link
@@ -123,6 +126,113 @@ export default function HomePage() {
             DISCOVER MORE
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
+        </div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="relative px-4 py-16">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Mobile App Development */}
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
+              <CardHeader className="text-center pb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-violet-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Smartphone className="h-8 w-8 text-white" />
+                </div>
+                <CardTitle className="text-xl font-space-grotesk font-bold tracking-tight">
+                  Mobile App Development
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <CardDescription className="text-white/80 leading-relaxed font-inter">
+                  Achieve measurable business results by developing custom scalable and featured-rich mobile
+                  applications.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            {/* Web Development */}
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 hover:scale-105">
+              <CardHeader className="text-center pb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Globe className="h-8 w-8 text-white" />
+                </div>
+                <CardTitle className="text-xl font-space-grotesk font-bold tracking-tight">Web Development</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <CardDescription className="text-white/80 leading-relaxed font-inter">
+                  Revolutionize your business ideas using web development services for innovative and next-gen
+                  applications.
+                </CardDescription>
+              </CardContent>
+            </Card>
+
+            {/* Desktop App Development */}
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all duration-300 hover:scale-105">
+              <CardHeader className="text-center pb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <Monitor className="h-8 w-8 text-white" />
+                </div>
+                <CardTitle className="text-xl font-space-grotesk font-bold tracking-tight">
+                  Desktop App Development
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <CardDescription className="text-white/80 leading-relaxed font-inter">
+                  Translate unique client requirements into custom desktop applications with premier quality and
+                  advanced technologies.
+                </CardDescription>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Mindset Section */}
+      <section
+        id="product-mindset"
+        className="relative px-4 py-16 bg-gradient-to-r from-white/5 via-emerald-500/5 to-teal-500/5 backdrop-blur-sm"
+      >
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white text-center mb-12 bg-gradient-to-r from-white via-emerald-200 to-teal-200 bg-clip-text text-transparent tracking-tight">
+            Product Mindset
+          </h2>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-white">
+              <h3 className="text-3xl font-space-grotesk font-bold mb-6 bg-gradient-to-r from-white to-emerald-200 bg-clip-text text-transparent tracking-tight">
+                Building Solutions That Matter
+              </h3>
+              <p className="text-xl text-white/90 mb-8 leading-relaxed font-inter font-light">
+                We don't just write code - we build products that solve real problems. Our product mindset ensures every
+                feature we develop adds genuine value to your business and your users.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">User-Centric Design Approach</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">Data-Driven Decision Making</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">Continuous Improvement Focus</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">Market-Ready Solutions</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-64 h-64 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 shadow-2xl">
+                <div className="w-32 h-32 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full flex items-center justify-center">
+                  <Code2 className="h-16 w-16 text-white" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -219,54 +329,6 @@ export default function HomePage() {
                 </CardDescription>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Product Mindset Section */}
-      <section
-        id="product-mindset"
-        className="relative px-4 py-16 bg-gradient-to-r from-white/5 via-emerald-500/5 to-teal-500/5 backdrop-blur-sm"
-      >
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white text-center mb-12 bg-gradient-to-r from-white via-emerald-200 to-teal-200 bg-clip-text text-transparent tracking-tight">
-            Product Mindset
-          </h2>
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white">
-              <h3 className="text-3xl font-space-grotesk font-bold mb-6 bg-gradient-to-r from-white to-emerald-200 bg-clip-text text-transparent tracking-tight">
-                Building Solutions That Matter
-              </h3>
-              <p className="text-xl text-white/90 mb-8 leading-relaxed font-inter font-light">
-                We don't just write code - we build products that solve real problems. Our product mindset ensures every
-                feature we develop adds genuine value to your business and your users.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-emerald-400" />
-                  <span className="text-white/90 font-inter">User-Centric Design Approach</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-emerald-400" />
-                  <span className="text-white/90 font-inter">Data-Driven Decision Making</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-emerald-400" />
-                  <span className="text-white/90 font-inter">Continuous Improvement Focus</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-emerald-400" />
-                  <span className="text-white/90 font-inter">Market-Ready Solutions</span>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="w-64 h-64 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 shadow-2xl">
-                <div className="w-32 h-32 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full flex items-center justify-center">
-                  <Code2 className="h-16 w-16 text-white" />
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -379,16 +441,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
           </div>
-        </div>
-      </section>
-
-      {/* Statistics Section */}
-      <section className="relative px-4 py-16 bg-gradient-to-r from-white/5 via-violet-500/5 to-cyan-500/5 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white mb-12 bg-gradient-to-r from-white via-violet-200 to-cyan-200 bg-clip-text text-transparent tracking-tight">
-            Our Achievements
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 pt-16">
             <div className="text-center p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl backdrop-blur-sm border border-white/20">
               <div className="text-5xl font-space-grotesk font-black text-transparent bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text mb-2 tracking-tighter">
                 50+
@@ -600,12 +653,12 @@ export default function HomePage() {
                 <Github className="h-5 w-5" />
               </Link>
             </div>
-          </div>
 
-          <div className="text-center mt-4">
-            <p className="text-white/60 text-sm font-inter">
-              © {new Date().getFullYear()} LifeCOMPILERS. All rights reserved.
-            </p>
+            <div className="text-center mt-4">
+              <p className="text-white/60 text-sm font-inter">
+                © {new Date().getFullYear()} LifeCOMPILERS. All rights reserved.
+              </p>
+            </div>
           </div>
         </div>
       </footer>
