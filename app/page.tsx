@@ -134,7 +134,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             {/* Mobile App Development */}
-            <Card className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-violet-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Smartphone className="h-8 w-8 text-white" />
@@ -152,7 +152,7 @@ export default function HomePage() {
             </Card>
 
             {/* Web Development */}
-            <Card className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 hover:scale-105">
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 hover:scale-105">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Globe className="h-8 w-8 text-white" />
@@ -168,7 +168,7 @@ export default function HomePage() {
             </Card>
 
             {/* Desktop App Development */}
-            <Card className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all duration-300 hover:scale-105">
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all duration-300 hover:scale-105">
               <CardHeader className="text-center pb-4">
                 <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <Monitor className="h-8 w-8 text-white" />
@@ -268,7 +268,7 @@ export default function HomePage() {
             What Our Clients Say
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-pink-500/20">
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-pink-500/20">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -292,7 +292,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-cyan-500/20">
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 text-white shadow-2xl shadow-cyan-500/20">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -419,7 +419,7 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <Card className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 shadow-2xl">
+            <Card className="bg-transparent bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 shadow-2xl">
               <CardContent className="p-8">
                 <form className="space-y-6">
                   <div>
