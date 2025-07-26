@@ -188,6 +188,42 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Partner Approach Section */}
+      <section className="relative px-4 py-16">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-white">
+              <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold mb-6 bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent tracking-tight">
+                Partner Approach
+              </h2>
+              <p className="text-xl text-white/90 mb-8 leading-relaxed font-inter font-light">
+                We are driven by 'Customer success' culture and don't think of ourselves as a service provider but your
+                technology partner who is committed to your success.
+              </p>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">Collaborative Development Process</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">Transparent Communication</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="h-6 w-6 text-emerald-400" />
+                  <span className="text-white/90 font-inter">Long-term Partnership Focus</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-64 h-64 bg-gradient-to-br from-violet-500/20 to-cyan-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 shadow-2xl">
+                <MessageSquare className="h-32 w-32 text-white/60" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Product Mindset Section */}
       <section
         id="product-mindset"
@@ -329,42 +365,6 @@ export default function HomePage() {
                 </CardDescription>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Partner Approach Section */}
-      <section className="relative px-4 py-16">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white">
-              <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold mb-6 bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent tracking-tight">
-                Partner Approach
-              </h2>
-              <p className="text-xl text-white/90 mb-8 leading-relaxed font-inter font-light">
-                We are driven by 'Customer success' culture and don't think of ourselves as a service provider but your
-                technology partner who is committed to your success.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-emerald-400" />
-                  <span className="text-white/90 font-inter">Collaborative Development Process</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-emerald-400" />
-                  <span className="text-white/90 font-inter">Transparent Communication</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="h-6 w-6 text-emerald-400" />
-                  <span className="text-white/90 font-inter">Long-term Partnership Focus</span>
-                </div>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="w-64 h-64 bg-gradient-to-br from-violet-500/20 to-cyan-500/20 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 shadow-2xl">
-                <MessageSquare className="h-32 w-32 text-white/60" />
-              </div>
-            </div>
           </div>
         </div>
       </section>
