@@ -383,26 +383,6 @@ export default function HomePage() {
             into powerful digital solutions. Our team of expert developers, designers, and strategists work together to
             deliver exceptional results.
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl backdrop-blur-sm border border-white/20">
-              <div className="text-5xl font-space-grotesk font-black text-transparent bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text mb-2 tracking-tighter">
-                50+
-              </div>
-              <div className="text-white/80 font-inter">Projects Completed</div>
-            </div>
-            <div className="text-center p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl backdrop-blur-sm border border-white/20">
-              <div className="text-5xl font-space-grotesk font-black text-transparent bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text mb-2 tracking-tighter">
-                25+
-              </div>
-              <div className="text-white/80 font-inter">Happy Clients</div>
-            </div>
-            <div className="text-center p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl backdrop-blur-sm border border-white/20">
-              <div className="text-5xl font-space-grotesk font-black text-transparent bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text mb-2 tracking-tighter">
-                5+
-              </div>
-              <div className="text-white/80 font-inter">Years Experience</div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -460,6 +440,35 @@ export default function HomePage() {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className="relative px-4 py-16 bg-gradient-to-r from-white/5 via-violet-500/5 to-cyan-500/5 backdrop-blur-sm">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white mb-12 bg-gradient-to-r from-white via-violet-200 to-cyan-200 bg-clip-text text-transparent tracking-tight">
+            Our Achievements
+          </h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl backdrop-blur-sm border border-white/20">
+              <div className="text-5xl font-space-grotesk font-black text-transparent bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text mb-2 tracking-tighter">
+                50+
+              </div>
+              <div className="text-white/80 font-inter">Projects Completed</div>
+            </div>
+            <div className="text-center p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl backdrop-blur-sm border border-white/20">
+              <div className="text-5xl font-space-grotesk font-black text-transparent bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text mb-2 tracking-tighter">
+                25+
+              </div>
+              <div className="text-white/80 font-inter">Happy Clients</div>
+            </div>
+            <div className="text-center p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl backdrop-blur-sm border border-white/20">
+              <div className="text-5xl font-space-grotesk font-black text-transparent bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text mb-2 tracking-tighter">
+                5+
+              </div>
+              <div className="text-white/80 font-inter">Years Experience</div>
+            </div>
           </div>
         </div>
       </section>
