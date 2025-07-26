@@ -98,7 +98,7 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="relative px-4 py-16 lg:py-24">
+      <section id="home" className="relative px-4 py-20 lg:py-32">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-space-grotesk font-black text-white mb-6 leading-tight tracking-tight">
             We provide the best{" "}
@@ -127,7 +127,7 @@ export default function HomePage() {
       </section>
 
       {/* Partner Approach Section */}
-      <section id="partner-approach" className="relative px-4 py-16">
+      <section id="partner-approach" className="relative px-4 py-20">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
@@ -165,7 +165,7 @@ export default function HomePage() {
       {/* Product Mindset Section */}
       <section
         id="product-mindset"
-        className="relative px-4 py-16 bg-gradient-to-r from-white/5 via-emerald-500/5 to-teal-500/5 backdrop-blur-sm"
+        className="relative px-4 py-20 bg-gradient-to-r from-white/5 via-emerald-500/5 to-teal-500/5 backdrop-blur-sm"
       >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white text-center mb-12 bg-gradient-to-r from-white via-emerald-200 to-teal-200 bg-clip-text text-transparent tracking-tight">
@@ -211,7 +211,7 @@ export default function HomePage() {
       </section>
 
       {/* Work Process Section */}
-      <section id="work-process" className="relative px-4 py-16">
+      <section id="work-process" className="relative px-4 py-20">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white text-center mb-12 bg-gradient-to-r from-white via-blue-200 to-purple-200 bg-clip-text text-transparent tracking-tight">
             Our Work Process
@@ -308,7 +308,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="relative px-4 py-16">
+      <section id="testimonials" className="relative px-4 py-20">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white text-center mb-12 bg-gradient-to-r from-white via-pink-200 to-violet-200 bg-clip-text text-transparent tracking-tight">
             What Our Clients Say
@@ -362,7 +362,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 pt-16">
+          <div className="mt-16 pt-8 border-t border-white/10 grid md:grid-cols-3 gap-8">
             <div className="text-center p-6 bg-gradient-to-br from-white/10 to-white/5 rounded-2xl backdrop-blur-sm border border-white/20">
               <div className="text-5xl font-space-grotesk font-black text-transparent bg-gradient-to-r from-violet-400 to-pink-400 bg-clip-text mb-2 tracking-tighter">
                 50+
@@ -388,7 +388,7 @@ export default function HomePage() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="relative px-4 py-16 bg-gradient-to-r from-white/5 via-purple-500/5 to-pink-500/5 backdrop-blur-sm"
+        className="relative px-4 py-20 bg-gradient-to-r from-white/5 via-purple-500/5 to-pink-500/5 backdrop-blur-sm"
       >
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-space-grotesk font-bold text-white text-center mb-12 bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent tracking-tight">
@@ -574,12 +574,12 @@ export default function HomePage() {
                 <Github className="h-5 w-5" />
               </Link>
             </div>
+          </div>
 
-            <div className="text-center mt-4">
-              <p className="text-white/60 text-sm font-inter">
-                © {new Date().getFullYear()} LifeCOMPILERS. All rights reserved.
-              </p>
-            </div>
+          <div className="text-center mt-6 pt-4 border-t border-white/10">
+            <p className="text-white/60 text-sm font-inter">
+              © {new Date().getFullYear()} LifeCOMPILERS. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
