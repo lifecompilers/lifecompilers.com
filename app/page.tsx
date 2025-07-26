@@ -13,6 +13,11 @@ import {
   Mail,
   Phone,
   MapPin,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Github,
 } from "lucide-react"
 import Link from "next/link"
 
@@ -356,6 +361,63 @@ export default function HomePage() {
                   </span>
                 </div>
               </div>
+
+              {/* Social Media Links */}
+              <div className="mt-8">
+                <h4 className="text-xl font-space-grotesk font-bold mb-4 text-white">Follow Us</h4>
+                <div className="flex space-x-4">
+                  <Link
+                    href="https://facebook.com/lifecompilers"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <div className="p-3 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform group-hover:scale-110 shadow-lg hover:shadow-blue-500/30">
+                      <Facebook className="h-6 w-6 text-white" />
+                    </div>
+                  </Link>
+                  <Link
+                    href="https://twitter.com/lifecompilers"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <div className="p-3 bg-gradient-to-r from-sky-500 to-sky-600 rounded-full hover:from-sky-600 hover:to-sky-700 transition-all duration-300 transform group-hover:scale-110 shadow-lg hover:shadow-sky-500/30">
+                      <Twitter className="h-6 w-6 text-white" />
+                    </div>
+                  </Link>
+                  <Link
+                    href="https://linkedin.com/company/lifecompilers"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <div className="p-3 bg-gradient-to-r from-blue-700 to-blue-800 rounded-full hover:from-blue-800 hover:to-blue-900 transition-all duration-300 transform group-hover:scale-110 shadow-lg hover:shadow-blue-700/30">
+                      <Linkedin className="h-6 w-6 text-white" />
+                    </div>
+                  </Link>
+                  <Link
+                    href="https://instagram.com/lifecompilers"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <div className="p-3 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform group-hover:scale-110 shadow-lg hover:shadow-pink-500/30">
+                      <Instagram className="h-6 w-6 text-white" />
+                    </div>
+                  </Link>
+                  <Link
+                    href="https://github.com/lifecompilers"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <div className="p-3 bg-gradient-to-r from-gray-700 to-gray-800 rounded-full hover:from-gray-800 hover:to-gray-900 transition-all duration-300 transform group-hover:scale-110 shadow-lg hover:shadow-gray-700/30">
+                      <Github className="h-6 w-6 text-white" />
+                    </div>
+                  </Link>
+                </div>
+              </div>
             </div>
             <Card className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 shadow-2xl">
               <CardContent className="p-8">
@@ -393,18 +455,66 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="relative px-4 py-8 border-t border-white/10">
-        <div className="max-w-6xl mx-auto text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <div className="p-2 bg-gradient-to-r from-violet-500 to-cyan-500 rounded-full">
-              <Code2 className="h-5 w-5 text-white" />
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+            <div className="flex items-center space-x-2">
+              <div className="p-2 bg-gradient-to-r from-violet-500 to-cyan-500 rounded-full">
+                <Code2 className="h-5 w-5 text-white" />
+              </div>
+              <span className="text-lg font-space-grotesk font-bold bg-gradient-to-r from-white to-cyan-100 bg-clip-text text-transparent tracking-tight">
+                LifeCOMPILERS
+              </span>
             </div>
-            <span className="text-lg font-space-grotesk font-bold bg-gradient-to-r from-white to-cyan-100 bg-clip-text text-transparent tracking-tight">
-              LifeCOMPILERS
-            </span>
+
+            <div className="flex space-x-4">
+              <Link
+                href="https://facebook.com/lifecompilers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors duration-300"
+              >
+                <Facebook className="h-5 w-5" />
+              </Link>
+              <Link
+                href="https://twitter.com/lifecompilers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors duration-300"
+              >
+                <Twitter className="h-5 w-5" />
+              </Link>
+              <Link
+                href="https://linkedin.com/company/lifecompilers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors duration-300"
+              >
+                <Linkedin className="h-5 w-5" />
+              </Link>
+              <Link
+                href="https://instagram.com/lifecompilers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors duration-300"
+              >
+                <Instagram className="h-5 w-5" />
+              </Link>
+              <Link
+                href="https://github.com/lifecompilers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors duration-300"
+              >
+                <Github className="h-5 w-5" />
+              </Link>
+            </div>
           </div>
-          <p className="text-white/60 text-sm font-inter">
-            © {new Date().getFullYear()} LifeCOMPILERS. All rights reserved.
-          </p>
+
+          <div className="text-center mt-4">
+            <p className="text-white/60 text-sm font-inter">
+              © {new Date().getFullYear()} LifeCOMPILERS. All rights reserved.
+            </p>
+          </div>
         </div>
       </footer>
     </div>
