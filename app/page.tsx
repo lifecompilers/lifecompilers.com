@@ -208,49 +208,6 @@ export default function HomePage() {
               <ArrowRight className="ml-3 h-6 w-6" />
             </Button>
           </div>
-
-          {/* Hero Visual Element */}
-          <div className="relative max-w-4xl mx-auto">
-            <div className="aspect-video bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center relative">
-                {/* Professional illustration using CSS and icons */}
-                <div className="grid grid-cols-3 gap-8 p-12">
-                  <div className="flex flex-col items-center space-y-4">
-                    <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
-                      <Globe className="h-8 w-8 text-white" />
-                    </div>
-                    <div className="text-center">
-                      <div className="text-white font-space-grotesk font-semibold text-sm">Web Development</div>
-                      <div className="text-white/60 font-inter text-xs">Modern Solutions</div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center space-y-4">
-                    <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full flex items-center justify-center shadow-lg">
-                      <Smartphone className="h-8 w-8 text-white" />
-                    </div>
-                    <div className="text-center">
-                      <div className="text-white font-space-grotesk font-semibold text-sm">Mobile Apps</div>
-                      <div className="text-white/60 font-inter text-xs">Cross Platform</div>
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center space-y-4">
-                    <div className="w-16 h-16 bg-gradient-to-r from-violet-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
-                      <Database className="h-8 w-8 text-white" />
-                    </div>
-                    <div className="text-center">
-                      <div className="text-white font-space-grotesk font-semibold text-sm">Backend Systems</div>
-                      <div className="text-white/60 font-inter text-xs">Scalable Infrastructure</div>
-                    </div>
-                  </div>
-                </div>
-                {/* Decorative elements */}
-                <div className="absolute top-4 left-4 w-3 h-3 bg-violet-400 rounded-full opacity-60"></div>
-                <div className="absolute top-8 right-8 w-2 h-2 bg-cyan-400 rounded-full opacity-80"></div>
-                <div className="absolute bottom-6 left-8 w-4 h-4 bg-pink-400 rounded-full opacity-50"></div>
-                <div className="absolute bottom-4 right-4 w-3 h-3 bg-emerald-400 rounded-full opacity-70"></div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
