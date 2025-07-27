@@ -28,7 +28,6 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
-import Image from "next/image"
 
 export default function HomePage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -210,17 +209,45 @@ export default function HomePage() {
             </Button>
           </div>
 
-          {/* Hero Image/Illustration */}
+          {/* Hero Visual Element */}
           <div className="relative max-w-4xl mx-auto">
             <div className="aspect-video bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-3xl shadow-2xl overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center">
-                <Image
-                  src="/placeholder.svg?height=400&width=800"
-                  alt="Professional software development team"
-                  width={800}
-                  height={400}
-                  className="w-full h-full object-cover opacity-80"
-                />
+              <div className="w-full h-full flex items-center justify-center relative">
+                {/* Professional illustration using CSS and icons */}
+                <div className="grid grid-cols-3 gap-8 p-12">
+                  <div className="flex flex-col items-center space-y-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
+                      <Globe className="h-8 w-8 text-white" />
+                    </div>
+                    <div className="text-center">
+                      <div className="text-white font-space-grotesk font-semibold text-sm">Web Development</div>
+                      <div className="text-white/60 font-inter text-xs">Modern Solutions</div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center space-y-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full flex items-center justify-center shadow-lg">
+                      <Smartphone className="h-8 w-8 text-white" />
+                    </div>
+                    <div className="text-center">
+                      <div className="text-white font-space-grotesk font-semibold text-sm">Mobile Apps</div>
+                      <div className="text-white/60 font-inter text-xs">Cross Platform</div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center space-y-4">
+                    <div className="w-16 h-16 bg-gradient-to-r from-violet-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
+                      <Database className="h-8 w-8 text-white" />
+                    </div>
+                    <div className="text-center">
+                      <div className="text-white font-space-grotesk font-semibold text-sm">Backend Systems</div>
+                      <div className="text-white/60 font-inter text-xs">Scalable Infrastructure</div>
+                    </div>
+                  </div>
+                </div>
+                {/* Decorative elements */}
+                <div className="absolute top-4 left-4 w-3 h-3 bg-violet-400 rounded-full opacity-60"></div>
+                <div className="absolute top-8 right-8 w-2 h-2 bg-cyan-400 rounded-full opacity-80"></div>
+                <div className="absolute bottom-6 left-8 w-4 h-4 bg-pink-400 rounded-full opacity-50"></div>
+                <div className="absolute bottom-4 right-4 w-3 h-3 bg-emerald-400 rounded-full opacity-70"></div>
               </div>
             </div>
           </div>
@@ -298,13 +325,28 @@ export default function HomePage() {
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
                 <div className="w-80 h-80 bg-gradient-to-br from-violet-500/20 to-cyan-500/20 backdrop-blur-sm rounded-3xl flex items-center justify-center border border-white/20 shadow-2xl">
-                  <Image
-                    src="/placeholder.svg?height=300&width=300"
-                    alt="Partnership collaboration"
-                    width={300}
-                    height={300}
-                    className="rounded-2xl opacity-90"
-                  />
+                  {/* Partnership illustration using icons and CSS */}
+                  <div className="relative">
+                    <div className="flex items-center justify-center space-x-8">
+                      <div className="flex flex-col items-center space-y-4">
+                        <div className="w-20 h-20 bg-gradient-to-r from-violet-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
+                          <Users className="h-10 w-10 text-white" />
+                        </div>
+                        <div className="text-white/80 font-space-grotesk text-sm font-semibold">Your Team</div>
+                      </div>
+                      <div className="flex flex-col items-center">
+                        <div className="w-8 h-1 bg-gradient-to-r from-violet-400 to-cyan-400 rounded-full mb-2"></div>
+                        <MessageSquare className="h-8 w-8 text-cyan-400" />
+                        <div className="w-8 h-1 bg-gradient-to-r from-cyan-400 to-violet-400 rounded-full mt-2"></div>
+                      </div>
+                      <div className="flex flex-col items-center space-y-4">
+                        <div className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                          <Code2 className="h-10 w-10 text-white" />
+                        </div>
+                        <div className="text-white/80 font-space-grotesk text-sm font-semibold">Our Team</div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 {/* Decorative elements */}
                 <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-violet-500 to-purple-600 rounded-full opacity-20 blur-xl"></div>
@@ -373,13 +415,33 @@ export default function HomePage() {
             <div className="flex justify-center lg:justify-start">
               <div className="relative">
                 <div className="w-80 h-80 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 backdrop-blur-sm rounded-3xl flex items-center justify-center border border-white/20 shadow-2xl">
-                  <Image
-                    src="/placeholder.svg?height=300&width=300"
-                    alt="Product development process"
-                    width={300}
-                    height={300}
-                    className="rounded-2xl opacity-90"
-                  />
+                  {/* Product development illustration */}
+                  <div className="relative">
+                    <div className="w-32 h-32 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full flex items-center justify-center shadow-2xl">
+                      <Code2 className="h-16 w-16 text-white" />
+                    </div>
+                    {/* Orbiting elements */}
+                    <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
+                      <div className="w-12 h-12 bg-gradient-to-r from-violet-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
+                        <Target className="h-6 w-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="absolute top-1/2 -right-8 transform -translate-y-1/2">
+                      <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-600 rounded-full flex items-center justify-center shadow-lg">
+                        <Zap className="h-6 w-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2">
+                      <div className="w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-600 rounded-full flex items-center justify-center shadow-lg">
+                        <Shield className="h-6 w-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="absolute top-1/2 -left-8 transform -translate-y-1/2">
+                      <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-yellow-600 rounded-full flex items-center justify-center shadow-lg">
+                        <CheckCircle className="h-6 w-6 text-white" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 {/* Decorative elements */}
                 <div className="absolute -top-4 -left-4 w-24 h-24 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-full opacity-20 blur-xl"></div>
@@ -562,13 +624,9 @@ export default function HomePage() {
                 </blockquote>
                 <div className="flex items-center">
                   <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-violet-600 rounded-full flex items-center justify-center mr-4 shadow-lg">
-                    <Image
-                      src="/placeholder.svg?height=64&width=64"
-                      alt="Mr. Suraj Bhosale"
-                      width={64}
-                      height={64}
-                      className="rounded-full"
-                    />
+                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                      <Users className="h-6 w-6 text-white" />
+                    </div>
                   </div>
                   <div>
                     <div className="font-space-grotesk font-bold text-xl tracking-tight">Mr. Suraj Bhosale</div>
@@ -592,13 +650,9 @@ export default function HomePage() {
                 </blockquote>
                 <div className="flex items-center">
                   <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center mr-4 shadow-lg">
-                    <Image
-                      src="/placeholder.svg?height=64&width=64"
-                      alt="Prof. Sujit Nagare"
-                      width={64}
-                      height={64}
-                      className="rounded-full"
-                    />
+                    <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
+                      <Users className="h-6 w-6 text-white" />
+                    </div>
                   </div>
                   <div>
                     <div className="font-space-grotesk font-bold text-xl tracking-tight">Prof. Sujit Nagare</div>
