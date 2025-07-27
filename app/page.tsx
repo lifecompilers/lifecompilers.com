@@ -891,7 +891,7 @@ export default function HomePage() {
 
           <div className="text-center mt-8 pt-6 border-t border-white/10">
             <p className="text-white/60 font-inter">
-              © {new Date().getFullYear()} LifeCOMPILERS. All rights reserved. | Crafted with passion for innovation.
+              © {new Date().getFullYear()} LifeCOMPILERS. All rights reserved. | Made with ❤️ in India
             </p>
           </div>
         </div>
