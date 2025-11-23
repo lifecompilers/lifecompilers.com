@@ -8,13 +8,8 @@ const Footer = () => {
           </div>
           <p className="mt-2 text-sm font-medium">© {new Date().getFullYear()} LifeCOMPILERS. All rights reserved.</p>
         </div>
-        <div className="flex gap-8 text-sm font-bold">
-          <a href="#" className="hover:text-primary transition-colors">
-            Privacy Policy
-          </a>
-          <a href="#" className="hover:text-primary transition-colors">
-            Terms of Service
-          </a>
+        <div>
+          Made with <span style={{ color: '#f43f5e' }}>&#10084;</span> in India
         </div>
       </div>
     </footer>
