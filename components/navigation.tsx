@@ -135,20 +135,39 @@ const Navigation = () => {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div id="mobile-menu" className="md:hidden absolute top-full left-0 w-full bg-card/95 backdrop-blur-xl border-t border-border shadow-2xl">
-          <div className="px-4 pt-4 pb-6 space-y-2">
-            {navLinks.map((link) => (
+        <>
+          {/* Backdrop — dims page content behind the menu */}
+          <button
+            aria-label="Close menu"
+            onClick={() => setIsOpen(false)}
+            className="md:hidden fixed inset-0 top-[var(--mobile-menu-top,4rem)] bg-foreground/40 backdrop-blur-sm z-[-1]"
+            tabIndex={-1}
+          />
+          <div
+            id="mobile-menu"
+            className="md:hidden absolute top-full left-0 w-full bg-card border-t border-border shadow-2xl"
+          >
+            <div className="px-4 pt-4 pb-6 space-y-2">
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block px-4 py-3 text-base font-bold text-muted-foreground hover:text-primary hover:bg-accent rounded-xl transition-colors"
+                >
+                  {link.name}
+                </a>
+              ))}
               <a
-                key={link.name}
-                href={link.href}
+                href="#contact"
                 onClick={() => setIsOpen(false)}
-                className="block px-4 py-3 text-base font-bold text-muted-foreground hover:text-primary hover:bg-accent rounded-xl transition-colors"
+                className="block text-center mt-4 px-4 py-3 text-base font-bold bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-colors shadow-md shadow-primary/20"
               >
-                {link.name}
+                Talk To Us
               </a>
-            ))}
+            </div>
           </div>
-        </div>
+        </>
       )}
     </nav>
   )

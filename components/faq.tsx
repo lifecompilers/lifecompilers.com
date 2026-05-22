@@ -1,6 +1,11 @@
 import { ChevronDown } from "lucide-react"
 import { faqItems } from "@/lib/faq-data"
 
+// Tiny inline script: when the page loads with #faq-<slug> in the URL (or
+// when the hash changes via in-page nav), find the matching <details> and
+// open it. Without this, deep links land on a collapsed item.
+const HASH_OPEN_SCRIPT = `(function(){function o(){var h=location.hash.slice(1);if(!h)return;var e=document.getElementById(h);if(e&&e.tagName==='DETAILS'){e.open=true;}}o();window.addEventListener('hashchange',o);})();`
+
 const Faq = () => {
   return (
     <section
@@ -25,7 +30,7 @@ const Faq = () => {
               key={item.slug}
               id={`faq-${item.slug}`}
               open={idx === 0}
-              className="group bg-card border border-border rounded-2xl overflow-hidden transition-all open:shadow-md"
+              className="group scroll-mt-28 bg-card border border-border open:border-primary/40 rounded-2xl overflow-hidden transition-all open:shadow-md"
             >
               <summary className="list-none cursor-pointer flex items-center justify-between gap-4 px-6 py-5 text-left text-lg font-bold text-foreground hover:text-primary transition-colors [&::-webkit-details-marker]:hidden">
                 <h3 className="m-0 text-lg font-bold leading-snug">{item.question}</h3>
@@ -41,6 +46,8 @@ const Faq = () => {
           ))}
         </div>
       </div>
+
+      <script dangerouslySetInnerHTML={{ __html: HASH_OPEN_SCRIPT }} />
     </section>
   )
 }

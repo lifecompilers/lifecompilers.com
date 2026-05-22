@@ -89,7 +89,9 @@ const Services = () => {
                 {service.subtitle}
               </p>
               <h3 className="text-2xl font-bold text-foreground mb-4">{service.title}</h3>
-              <p className="text-muted-foreground leading-relaxed mb-6">{service.desc}</p>
+              <p className="text-muted-foreground leading-relaxed mb-6 min-h-[7.5rem] md:min-h-[8.5rem]">
+                {service.desc}
+              </p>
 
               <a
                 href="#contact"

@@ -14,7 +14,7 @@ export const testimonials: Testimonial[] = [
     content:
       "The team at LifeCOMPILERS exceeded our expectations. Their attention to detail and understanding of our business requirements was outstanding.",
     initial: "S",
-    color: "from-teal-400 to-teal-600",
+    color: "from-teal-500 to-cyan-600",
     reviewAspect: "Attention to detail and requirements gathering",
   },
   {
@@ -23,7 +23,7 @@ export const testimonials: Testimonial[] = [
     content:
       "Astonishing and remarkable services from LifeCOMPILERS. I was particularly impressed by their passion, honesty, and sense of fulfillment in delivering the project.",
     initial: "P",
-    color: "from-emerald-400 to-emerald-600",
+    color: "from-amber-500 to-orange-600",
     reviewAspect: "Project delivery and professionalism",
   },
 ]

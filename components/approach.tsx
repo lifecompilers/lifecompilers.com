@@ -1,23 +1,28 @@
-import { Users, Target, Rocket, Github, Calendar } from "lucide-react"
+import { Users, Target, Rocket, Github, Calendar, Layers } from "lucide-react"
 
+// Literal class names so Tailwind v4 JIT picks them up. Slash-opacity is the
+// v4 syntax (the legacy `bg-opacity-X` modifier no longer applies).
 const principles = [
   {
     title: "Two-week sprints, weekly demos",
     desc: "Working software in front of you every week, not a slide deck at the end of the quarter.",
     icon: Users,
-    color: "bg-teal-500",
+    iconBg: "bg-teal-500/10 dark:bg-teal-500/20",
+    iconColor: "text-teal-600 dark:text-teal-400",
   },
   {
     title: "Product-minded engineering",
     desc: "We push back on requirements that won't ship value, and propose smaller alternatives that will.",
     icon: Target,
-    color: "bg-emerald-500",
+    iconBg: "bg-emerald-500/10 dark:bg-emerald-500/20",
+    iconColor: "text-emerald-600 dark:text-emerald-400",
   },
   {
     title: "Modern, boring stack",
     desc: "TypeScript, React, Next.js, PostgreSQL — proven tools we can support five years from now.",
     icon: Rocket,
-    color: "bg-cyan-500",
+    iconBg: "bg-cyan-500/10 dark:bg-cyan-500/20",
+    iconColor: "text-cyan-600 dark:text-cyan-400",
   },
 ]
 
@@ -28,8 +33,8 @@ const Approach = () => {
       aria-labelledby="approach-heading"
       className="py-20 bg-foreground/5 dark:bg-background relative overflow-hidden"
     >
-      <div aria-hidden="true" className="absolute top-0 right-0 w-[500px] h-[500px] bg-teal-500/8 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
-      <div aria-hidden="true" className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-emerald-500/8 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/4 pointer-events-none"></div>
+      <div aria-hidden="true" className="absolute top-0 right-0 w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+      <div aria-hidden="true" className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-emerald-500/10 rounded-full blur-[80px] translate-y-1/2 -translate-x-1/4 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -52,7 +57,7 @@ const Approach = () => {
                 <div key={item.title} className="flex gap-5 items-start">
                   <div
                     aria-hidden="true"
-                    className={`flex-shrink-0 w-12 h-12 rounded-xl ${item.color} bg-opacity-10 dark:bg-opacity-20 flex items-center justify-center text-primary`}
+                    className={`flex-shrink-0 w-12 h-12 rounded-xl ${item.iconBg} flex items-center justify-center ${item.iconColor}`}
                   >
                     <item.icon size={24} />
                   </div>
@@ -75,8 +80,9 @@ const Approach = () => {
                   <div className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Founded</div>
                 </div>
                 <div className="bg-background/80 p-6 rounded-2xl border border-border text-center transform hover:-translate-y-1 transition-transform duration-200 shadow-sm">
-                  <div aria-hidden="true" className="text-3xl font-black text-emerald-500 mb-1 mt-8">3</div>
-                  <div className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Core practices</div>
+                  <Layers aria-hidden="true" className="w-6 h-6 text-emerald-500 mx-auto mb-2" />
+                  <div className="text-3xl font-black text-emerald-500 mb-1">3</div>
+                  <div className="text-sm font-medium text-muted-foreground uppercase tracking-wide">Practices</div>
                   <div className="text-xs text-muted-foreground mt-1">Web · Mobile · Desktop</div>
                 </div>
                 <a

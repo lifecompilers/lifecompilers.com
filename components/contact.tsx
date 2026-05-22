@@ -67,7 +67,7 @@ const Contact = () => {
                 </div>
               </address>
 
-              <p className="mt-8 text-background/60 text-sm">
+              <p className="mt-8 text-background/80 text-sm">
                 Languages: English, Hindi, Marathi
               </p>
 

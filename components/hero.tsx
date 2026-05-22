@@ -26,7 +26,8 @@ const Hero = () => {
             id="hero-heading"
             className="text-5xl md:text-7xl font-black text-foreground tracking-tight mb-6 leading-[1.1]"
           >
-            Custom software <br className="hidden md:block" />
+            Custom software
+            <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-emerald-500 to-cyan-500">
               that grows your business.
             </span>
