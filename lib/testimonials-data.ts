@@ -4,6 +4,7 @@ export type Testimonial = {
   content: string
   initial: string
   color: string
+  reviewAspect?: string
 }
 
 export const testimonials: Testimonial[] = [
@@ -14,13 +15,15 @@ export const testimonials: Testimonial[] = [
       "The team at LifeCOMPILERS exceeded our expectations. Their attention to detail and understanding of our business requirements was outstanding.",
     initial: "S",
     color: "from-teal-400 to-teal-600",
+    reviewAspect: "Attention to detail and requirements gathering",
   },
   {
     name: "Prof. Sujit Nagare",
     role: "Indira Institute of Pharmacy",
     content:
-      "Astonishing and remarkable services. I was particularly impressed by their passion, honesty, and sense of fulfillment in delivering the project.",
+      "Astonishing and remarkable services from LifeCOMPILERS. I was particularly impressed by their passion, honesty, and sense of fulfillment in delivering the project.",
     initial: "P",
     color: "from-emerald-400 to-emerald-600",
+    reviewAspect: "Project delivery and professionalism",
   },
 ]

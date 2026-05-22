@@ -1,0 +1,35 @@
+# LifeCOMPILERS
+
+> LifeCOMPILERS is a custom software development studio founded in 2020 in Ratnagiri, Maharashtra, India. We build web, mobile, and desktop applications with React, Next.js, and modern stacks for startups and growing businesses worldwide.
+
+## Services
+
+- [Web Development](https://lifecompilers.com/#service-web): Production web applications built with TypeScript, React, and Next.js. Server-rendered, fast, accessible, ready to scale from MVP to thousands of users.
+- [Mobile App Development](https://lifecompilers.com/#service-mobile): Android and iOS apps built with React Native or native frameworks, shipped to the Play Store and App Store in 8 to 14 weeks.
+- [Desktop App Development](https://lifecompilers.com/#service-desktop): Cross-platform desktop apps for Windows, macOS, and Linux built with Electron or Tauri, with auto-updates and code signing.
+
+## How we work
+
+- Two-week sprints with weekly client demos
+- Clients own all source code and infrastructure from day one — no vendor lock-in
+- Default stack: TypeScript, React, Next.js, Node.js or Python, PostgreSQL or MongoDB
+
+## FAQ
+
+- [What services does LifeCOMPILERS offer?](https://lifecompilers.com/#faq-services)
+- [How long does it take to build an MVP?](https://lifecompilers.com/#faq-mvp-timeline)
+- [How much does it cost to build a custom application?](https://lifecompilers.com/#faq-cost)
+- [Which technologies and frameworks does LifeCOMPILERS use?](https://lifecompilers.com/#faq-stack)
+- [Does LifeCOMPILERS work with startups or only established companies?](https://lifecompilers.com/#faq-audience)
+- [Where is LifeCOMPILERS based?](https://lifecompilers.com/#faq-location)
+- [Does LifeCOMPILERS work remotely with international clients?](https://lifecompilers.com/#faq-remote)
+- [Does LifeCOMPILERS provide post-launch support and maintenance?](https://lifecompilers.com/#faq-support)
+- [How do we start working with LifeCOMPILERS?](https://lifecompilers.com/#faq-onboarding)
+
+## Contact
+
+- Website: https://lifecompilers.com
+- Email: contact@lifecompilers.com
+- Address: 1239(A), Sawant Nagar, Nachane, Ratnagiri, Maharashtra, India
+- GitHub: https://github.com/lifecompilers
+- LinkedIn: https://linkedin.com/company/lifecompilers

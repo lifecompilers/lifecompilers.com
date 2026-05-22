@@ -8,13 +8,18 @@ import Faq from "@/components/faq"
 import { faqItems } from "@/lib/faq-data"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
+import { LAST_MODIFIED, SITE_URL } from "@/lib/site-meta"
 
-const SITE_URL = "https://lifecompilers.com"
 // TODO: replace with the real business phone number, then mirror in components/contact.tsx
 const BUSINESS_PHONE: string | null = null
+// TODO: replace with founder name(s) — feeds Organization.founder + Knowledge Panel
+const FOUNDER_NAME: string | null = null
+
+const worldwide = { "@type": "Place", name: "Worldwide" }
 
 export default function App() {
   const orgRef = { "@id": `${SITE_URL}/#organization` }
+  const lastModifiedISO = LAST_MODIFIED.toISOString()
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -27,6 +32,8 @@ export default function App() {
         logo: {
           "@type": "ImageObject",
           url: `${SITE_URL}/logo-image`,
+          contentUrl: `${SITE_URL}/logo-image`,
+          encodingFormat: "image/png",
           width: 512,
           height: 512,
         },
@@ -35,12 +42,34 @@ export default function App() {
           "LifeCOMPILERS is a custom software development studio building web, mobile, and desktop applications for startups and growing businesses.",
         foundingDate: "2020",
         slogan: "We build software that grows your business.",
+        brand: {
+          "@type": "Brand",
+          name: "LifeCOMPILERS",
+          slogan: "We build software that grows your business.",
+        },
+        knowsAbout: [
+          "Custom software development",
+          "Web application development",
+          "Mobile app development",
+          "Desktop application development",
+          "MVP development",
+          "TypeScript",
+          "React",
+          "Next.js",
+          "React Native",
+          "Electron",
+          "Tauri",
+          "Node.js",
+          "PostgreSQL",
+          "MongoDB",
+        ],
+        ...(FOUNDER_NAME ? { founder: { "@type": "Person", name: FOUNDER_NAME } } : {}),
         contactPoint: {
           "@type": "ContactPoint",
           contactType: "Customer Service",
           email: "contact@lifecompilers.com",
           ...(BUSINESS_PHONE ? { telephone: BUSINESS_PHONE } : {}),
-          areaServed: "Worldwide",
+          areaServed: worldwide,
           availableLanguage: ["English", "Hindi", "Marathi"],
         },
         sameAs: [
@@ -61,16 +90,17 @@ export default function App() {
         priceRange: "$$",
         email: "contact@lifecompilers.com",
         ...(BUSINESS_PHONE ? { telephone: BUSINESS_PHONE } : {}),
+        parentOrganization: orgRef,
         address: {
           "@type": "PostalAddress",
           streetAddress: "1239(A), Sawant Nagar, Nachane",
           addressLocality: "Ratnagiri",
           addressRegion: "Maharashtra",
-          // TODO: confirm the correct PIN code for the address
+          // TODO: confirm correct PIN — Ratnagiri city is 415612, Nachane locality is 415639
           postalCode: "415612",
           addressCountry: "IN",
         },
-        areaServed: { "@type": "Country", name: "Worldwide" },
+        areaServed: worldwide,
         serviceType: [
           "Custom Software Development",
           "Web Application Development",
@@ -96,7 +126,11 @@ export default function App() {
         about: orgRef,
         primaryImageOfPage: { "@id": `${SITE_URL}/#primaryimage` },
         inLanguage: "en-US",
-        breadcrumb: { "@id": `${SITE_URL}/#breadcrumb` },
+        dateModified: lastModifiedISO,
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["#hero-heading", "#faq-mvp-timeline", "#faq-location"],
+        },
       },
       {
         "@type": "ImageObject",
@@ -105,29 +139,13 @@ export default function App() {
         width: 1200,
         height: 630,
       },
-      {
-        "@type": "BreadcrumbList",
-        "@id": `${SITE_URL}/#breadcrumb`,
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Home",
-            item: SITE_URL,
-          },
-        ],
-      },
-      {
-        "@type": "SiteNavigationElement",
-        name: ["Services", "Approach", "Testimonials", "FAQ", "Contact"],
-        url: [
-          `${SITE_URL}/#services`,
-          `${SITE_URL}/#approach`,
-          `${SITE_URL}/#testimonials`,
-          `${SITE_URL}/#faq`,
-          `${SITE_URL}/#contact`,
-        ],
-      },
+      // Each nav link is its own SiteNavigationElement so Google can recognize
+      // them individually for potential sitelinks. Parallel-array form is invalid.
+      { "@type": "SiteNavigationElement", name: "Services", url: `${SITE_URL}/#services` },
+      { "@type": "SiteNavigationElement", name: "Approach", url: `${SITE_URL}/#approach` },
+      { "@type": "SiteNavigationElement", name: "Testimonials", url: `${SITE_URL}/#testimonials` },
+      { "@type": "SiteNavigationElement", name: "FAQ", url: `${SITE_URL}/#faq` },
+      { "@type": "SiteNavigationElement", name: "Contact", url: `${SITE_URL}/#contact` },
       {
         "@type": "ItemList",
         "@id": `${SITE_URL}/#services-list`,
@@ -145,8 +163,9 @@ export default function App() {
         provider: orgRef,
         description:
           "Production web applications built with TypeScript, React, and Next.js — server-rendered, fast, accessible, and ready to scale from MVP to thousands of users.",
-        areaServed: "Worldwide",
+        areaServed: worldwide,
         serviceType: "Web Application Development",
+        audience: { "@type": "BusinessAudience", audienceType: "Startups and growing businesses" },
       },
       {
         "@type": "Service",
@@ -155,8 +174,9 @@ export default function App() {
         provider: orgRef,
         description:
           "Android and iOS apps built with React Native or native frameworks, shipped to the Play Store and App Store in 8 to 14 weeks.",
-        areaServed: "Worldwide",
+        areaServed: worldwide,
         serviceType: "Mobile Application Development",
+        audience: { "@type": "BusinessAudience", audienceType: "Startups and growing businesses" },
       },
       {
         "@type": "Service",
@@ -165,8 +185,9 @@ export default function App() {
         provider: orgRef,
         description:
           "Cross-platform desktop applications for Windows, macOS, and Linux built with Electron or Tauri, with auto-updates and code signing.",
-        areaServed: "Worldwide",
+        areaServed: worldwide,
         serviceType: "Desktop Application Development",
+        audience: { "@type": "BusinessAudience", audienceType: "Startups and growing businesses" },
       },
       {
         "@type": "FAQPage",
@@ -175,6 +196,8 @@ export default function App() {
         inLanguage: "en-US",
         mainEntity: faqItems.map((item) => ({
           "@type": "Question",
+          "@id": `${SITE_URL}/#faq-${item.slug}`,
+          url: `${SITE_URL}/#faq-${item.slug}`,
           name: item.question,
           acceptedAnswer: {
             "@type": "Answer",
@@ -189,9 +212,11 @@ export default function App() {
         author: {
           "@type": "Person",
           name: t.name,
-          ...(t.role ? { jobTitle: t.role } : {}),
+          ...(t.role ? { worksFor: { "@type": "Organization", name: t.role } } : {}),
         },
         reviewBody: t.content,
+        ...(t.reviewAspect ? { reviewAspect: t.reviewAspect } : {}),
+        // TODO: add datePublished (ISO date) per testimonial to qualify for review snippets
       })),
     ],
   }

@@ -1,4 +1,10 @@
 import { Github, Linkedin, Mail, MapPin } from "lucide-react"
+import { LAST_MODIFIED } from "@/lib/site-meta"
+
+const LAST_UPDATED_LABEL = LAST_MODIFIED.toLocaleDateString("en-US", {
+  month: "long",
+  year: "numeric",
+})
 
 const sections = [
   {
@@ -36,8 +42,8 @@ const Footer = () => {
               Life<span className="text-primary">COMPILERS</span>
             </div>
             <p className="mt-3 text-sm leading-relaxed max-w-xs">
-              A Ratnagiri-based studio shipping React, Next.js, and React Native applications for startups and growing
-              businesses since 2020.
+              LifeCOMPILERS is a Ratnagiri-based studio shipping React, Next.js, and React Native applications for
+              startups and growing businesses since 2020.
             </p>
             <ul className="mt-5 space-y-2 text-sm">
               <li className="flex items-start gap-2">
@@ -94,6 +100,9 @@ const Footer = () => {
 
         <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row justify-between items-center gap-3 text-sm">
           <p>© {new Date().getFullYear()} LifeCOMPILERS. All rights reserved.</p>
+          <p>
+            <time dateTime={LAST_MODIFIED.toISOString()}>Last updated: {LAST_UPDATED_LABEL}</time>
+          </p>
           <p>
             Made with <span style={{ color: "#f43f5e" }}>&#10084;</span> in India
           </p>

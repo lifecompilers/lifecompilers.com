@@ -20,15 +20,15 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12 relative z-10">
             <div className="text-background">
               <h2 id="contact-heading" className="text-4xl md:text-5xl font-black mb-6">
-                Let's build something
+                Contact
                 <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">
-                  amazing together.
+                  LifeCOMPILERS.
                 </span>
               </h2>
               <p className="text-background/70 text-lg mb-8 max-w-md leading-relaxed">
-                Ready to start your next project? Send a message and we'll respond within one business day with a free
-                30-minute discovery call.
+                Reach LifeCOMPILERS at contact@lifecompilers.com or via the form below. Every inquiry receives a reply
+                within one business day and a free 30-minute discovery call to scope budget and timeline.
               </p>
 
               <address className="space-y-8 not-italic">
@@ -66,6 +66,10 @@ const Contact = () => {
                   </div>
                 </div>
               </address>
+
+              <p className="mt-8 text-background/60 text-sm">
+                Languages: English, Hindi, Marathi
+              </p>
 
               <div className="mt-12">
                 <h3 className="font-bold text-background mb-4">Follow Us</h3>
