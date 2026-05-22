@@ -19,22 +19,23 @@ const Hero = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
             </span>
-            Custom software development studio
+            Custom software development studio · Ratnagiri, India
           </p>
 
           <h1
             id="hero-heading"
             className="text-5xl md:text-7xl font-black text-foreground tracking-tight mb-6 leading-[1.1]"
           >
-            We build software that <br className="hidden md:block" />
+            Custom software <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-emerald-500 to-cyan-500">
-              grows your business.
+              that grows your business.
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            LifeCOMPILERS is a product-minded development studio. We design and build custom web, mobile, and desktop
-            applications for startups and growing businesses — from first MVP to scaled product.
+            LifeCOMPILERS is a custom software development studio founded in 2020 in Ratnagiri, India. We build web,
+            Android, iOS, and cross-platform desktop apps with React, Next.js, and modern stacks — for startups and
+            growing businesses worldwide.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">

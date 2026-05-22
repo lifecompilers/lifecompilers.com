@@ -1,23 +1,6 @@
-const Testimonials = () => {
-  const testimonials = [
-    {
-      name: "Mr. Suraj Bhosale",
-      role: "Dive Sindhudurg",
-      content:
-        "The team at LifeCOMPILERS exceeded our expectations. Their attention to detail and understanding of our business requirements was outstanding.",
-      initial: "S",
-      color: "from-teal-400 to-teal-600",
-    },
-    {
-      name: "Prof. Sujit Nagare",
-      role: "Indira Institute of Pharmacy",
-      content:
-        "Astonishing and remarkable services. I was particularly impressed by their passion, honesty, and sense of fulfillment in delivering the project.",
-      initial: "P",
-      color: "from-emerald-400 to-emerald-600",
-    },
-  ]
+import { testimonials } from "@/lib/testimonials-data"
 
+const Testimonials = () => {
   return (
     <section
       id="testimonials"
@@ -28,10 +11,10 @@ const Testimonials = () => {
         <div className="text-center mb-12">
           <p className="text-primary font-bold tracking-wider uppercase text-sm mb-3">Client Stories</p>
           <h2 id="testimonials-heading" className="text-4xl md:text-5xl font-black text-foreground mb-6">
-            Trusted by teams across India
+            What our clients say
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            We take pride in building lasting relationships and delivering real value.
+            Real feedback from teams we've shipped products with across India.
           </p>
         </div>
 
@@ -62,10 +45,10 @@ const Testimonials = () => {
                 >
                   {t.initial}
                 </div>
-                <div>
+                <cite className="not-italic">
                   <div className="font-bold text-foreground text-lg">{t.name}</div>
                   <div className="text-sm text-primary font-medium">{t.role}</div>
-                </div>
+                </cite>
               </figcaption>
             </figure>
           ))}

@@ -3,6 +3,8 @@ import { ImageResponse } from "next/og"
 export const alt = "LifeCOMPILERS — Custom software for web, mobile, and desktop"
 export const size = { width: 1200, height: 630 }
 export const contentType = "image/png"
+// Image content rarely changes; let scrapers cache aggressively.
+export const revalidate = false
 
 export default function OpengraphImage() {
   return new ImageResponse(

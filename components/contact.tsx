@@ -1,10 +1,10 @@
 "use client"
-import { MapPin, Mail, Github, Linkedin, Facebook, ChevronRight } from "lucide-react"
+import { MapPin, Mail, Github, Linkedin, ChevronRight } from "lucide-react"
 
 const socialLinks = [
   { Icon: Github, href: "https://github.com/lifecompilers", label: "LifeCOMPILERS on GitHub" },
   { Icon: Linkedin, href: "https://linkedin.com/company/lifecompilers", label: "LifeCOMPILERS on LinkedIn" },
-  { Icon: Facebook, href: "https://facebook.com/lifecompilers", label: "LifeCOMPILERS on Facebook" },
+  // TODO: add Facebook / Twitter / Instagram only if the handles actually exist
 ]
 
 const Contact = () => {

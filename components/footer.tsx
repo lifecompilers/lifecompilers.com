@@ -1,4 +1,4 @@
-import { Github, Linkedin, Facebook, Mail, MapPin } from "lucide-react"
+import { Github, Linkedin, Mail, MapPin } from "lucide-react"
 
 const sections = [
   {
@@ -14,10 +14,9 @@ const sections = [
   {
     title: "Services",
     links: [
-      { name: "Web Development", href: "#services" },
-      { name: "Mobile App Development", href: "#services" },
-      { name: "Desktop Applications", href: "#services" },
-      { name: "Product Consulting", href: "#contact" },
+      { name: "Web Development", href: "#service-web" },
+      { name: "Mobile App Development", href: "#service-mobile" },
+      { name: "Desktop Applications", href: "#service-desktop" },
     ],
   },
 ]
@@ -25,7 +24,6 @@ const sections = [
 const socials = [
   { Icon: Github, href: "https://github.com/lifecompilers", label: "GitHub" },
   { Icon: Linkedin, href: "https://linkedin.com/company/lifecompilers", label: "LinkedIn" },
-  { Icon: Facebook, href: "https://facebook.com/lifecompilers", label: "Facebook" },
 ]
 
 const Footer = () => {
@@ -38,7 +36,8 @@ const Footer = () => {
               Life<span className="text-primary">COMPILERS</span>
             </div>
             <p className="mt-3 text-sm leading-relaxed max-w-xs">
-              Custom software development for web, mobile, and desktop — built for startups and growing businesses.
+              A Ratnagiri-based studio shipping React, Next.js, and React Native applications for startups and growing
+              businesses since 2020.
             </p>
             <ul className="mt-5 space-y-2 text-sm">
               <li className="flex items-start gap-2">
@@ -60,7 +59,7 @@ const Footer = () => {
 
           {sections.map((section) => (
             <nav key={section.title} aria-label={section.title}>
-              <h2 className="text-foreground font-bold mb-4 text-sm uppercase tracking-wider">{section.title}</h2>
+              <h3 className="text-foreground font-bold mb-4 text-sm uppercase tracking-wider">{section.title}</h3>
               <ul className="space-y-2 text-sm">
                 {section.links.map((link) => (
                   <li key={link.name}>
@@ -74,7 +73,7 @@ const Footer = () => {
           ))}
 
           <div>
-            <h2 className="text-foreground font-bold mb-4 text-sm uppercase tracking-wider">Connect</h2>
+            <h3 className="text-foreground font-bold mb-4 text-sm uppercase tracking-wider">Connect</h3>
             <ul className="flex gap-3">
               {socials.map(({ Icon, href, label }) => (
                 <li key={label}>

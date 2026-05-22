@@ -5,20 +5,21 @@ import { Analytics } from "@vercel/analytics/next"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans", display: "swap" })
+const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" })
 
 const SITE_URL = "https://lifecompilers.com"
 const SITE_NAME = "LifeCOMPILERS"
-const SITE_TITLE = "LifeCOMPILERS — Custom Web, Mobile & Desktop Software Development"
+const SITE_TITLE = "Custom Software Development in Ratnagiri, India | LifeCOMPILERS"
 const SITE_DESCRIPTION =
-  "LifeCOMPILERS is a software development studio based in Ratnagiri, India, building custom web, mobile, and desktop applications with React, Next.js, and modern stacks for startups and growing businesses."
+  "LifeCOMPILERS is a custom software development studio in Ratnagiri, India. We build web, mobile, and desktop applications with React, Next.js, and modern stacks for startups and growing businesses worldwide."
 
 export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#ffffff" },
     { media: "(prefers-color-scheme: dark)", color: "#0a1a1f" },
   ],
+  colorScheme: "light dark",
   width: "device-width",
   initialScale: 1,
 }
@@ -43,7 +44,6 @@ export const metadata: Metadata = {
     "software development India",
     "Ratnagiri software company",
     "LifeCOMPILERS",
-    "digital transformation",
     "MVP development",
     "startup software partner",
   ],
@@ -57,7 +57,11 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL(SITE_URL),
   alternates: {
-    canonical: "/",
+    canonical: SITE_URL,
+    languages: {
+      "en-US": "/",
+      "x-default": "/",
+    },
   },
   openGraph: {
     type: "website",
@@ -94,7 +98,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={`${geist.variable} ${geistMono.variable}`} suppressHydrationWarning>
       <body className="font-sans antialiased">
         <a
           href="#main"
