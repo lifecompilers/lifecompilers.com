@@ -16,7 +16,7 @@ const Navigation = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20)
 
-      const sections = ["home", "services", "approach", "testimonials", "contact"]
+      const sections = ["home", "services", "approach", "testimonials", "faq", "contact"]
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -40,11 +40,15 @@ const Navigation = () => {
     { name: "Services", href: "#services" },
     { name: "Approach", href: "#approach" },
     { name: "Testimonials", href: "#testimonials" },
+    { name: "FAQ", href: "#faq" },
     { name: "Contact", href: "#contact" },
   ]
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "py-4" : "py-6"}`}>
+    <nav
+      aria-label="Primary"
+      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "py-4" : "py-6"}`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center md:justify-center">
           {/* Brand - visible on mobile */}
@@ -118,9 +122,12 @@ const Navigation = () => {
             )}
             <button
               onClick={() => setIsOpen(!isOpen)}
+              aria-expanded={isOpen}
+              aria-controls="mobile-menu"
+              aria-label={isOpen ? "Close menu" : "Open menu"}
               className="text-foreground hover:text-primary focus:outline-none"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={24} aria-hidden="true" /> : <Menu size={24} aria-hidden="true" />}
             </button>
           </div>
         </div>
@@ -128,7 +135,7 @@ const Navigation = () => {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-card/95 backdrop-blur-xl border-t border-border shadow-2xl">
+        <div id="mobile-menu" className="md:hidden absolute top-full left-0 w-full bg-card/95 backdrop-blur-xl border-t border-border shadow-2xl">
           <div className="px-4 pt-4 pb-6 space-y-2">
             {navLinks.map((link) => (
               <a

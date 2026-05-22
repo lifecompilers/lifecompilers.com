@@ -47,21 +47,27 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="py-20 bg-background relative">
+    <section id="services" aria-labelledby="services-heading" className="py-20 bg-background relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-primary font-bold tracking-wider uppercase text-sm mb-3">Our Expertise</h2>
-          <h3 className="text-4xl md:text-5xl font-black text-foreground mb-6">Core Services</h3>
-          <div className="w-24 h-2 bg-gradient-to-r from-teal-500 to-emerald-500 mx-auto rounded-full"></div>
+          <p className="text-primary font-bold tracking-wider uppercase text-sm mb-3">Our Expertise</p>
+          <h2 id="services-heading" className="text-4xl md:text-5xl font-black text-foreground mb-6">
+            What we build
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-6">
+            Three core practices, each backed by a senior team and a track record of shipping production software.
+          </p>
+          <div aria-hidden="true" className="w-24 h-2 bg-gradient-to-r from-teal-500 to-emerald-500 mx-auto rounded-full"></div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, idx) => (
-            <div
+            <article
               key={idx}
               className={`group relative p-6 rounded-3xl bg-card border-2 border-border ${service.styles.border} transition-all duration-200 hover:-translate-y-1 shadow-lg shadow-black/5 dark:shadow-black/20 ${service.styles.shadow}`}
             >
               <div
+                aria-hidden="true"
                 className={`w-16 h-16 rounded-2xl ${service.styles.bg} ${service.styles.hoverBg} flex items-center justify-center mb-6 transition-colors duration-200`}
               >
                 <div
@@ -71,20 +77,21 @@ const Services = () => {
                 </div>
               </div>
 
-              <span className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
+              <p className="inline-block text-xs font-bold uppercase tracking-wider text-muted-foreground mb-2">
                 {service.subtitle}
-              </span>
-              <h4 className="text-2xl font-bold text-foreground mb-4">{service.title}</h4>
+              </p>
+              <h3 className="text-2xl font-bold text-foreground mb-4">{service.title}</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">{service.desc}</p>
 
               <a
                 href="#contact"
+                aria-label={`Learn more about ${service.title}`}
                 className="inline-flex items-center font-bold text-foreground group-hover:text-primary transition-colors duration-200"
               >
                 Learn more{" "}
-                <ChevronRight className="h-5 w-5 ml-1 transition-transform duration-200 group-hover:translate-x-1" />
+                <ChevronRight aria-hidden="true" className="h-5 w-5 ml-1 transition-transform duration-200 group-hover:translate-x-1" />
               </a>
-            </div>
+            </article>
           ))}
         </div>
       </div>

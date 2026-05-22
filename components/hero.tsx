@@ -2,32 +2,39 @@ import { ChevronRight } from "lucide-react"
 
 const Hero = () => {
   return (
-    <section id="home" className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden bg-background">
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+    <section
+      id="home"
+      aria-labelledby="hero-heading"
+      className="relative pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden bg-background"
+    >
+      <div aria-hidden="true" className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-teal-500/15 blur-[100px] animate-blob"></div>
         <div className="absolute top-[20%] right-[5%] w-[35%] h-[35%] rounded-full bg-emerald-500/15 blur-[100px] animate-blob [animation-delay:5s]"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold mb-6 border border-primary/20 shadow-sm backdrop-blur-sm">
-            <span className="relative flex h-2.5 w-2.5">
+          <p className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold mb-6 border border-primary/20 shadow-sm backdrop-blur-sm">
+            <span aria-hidden="true" className="relative flex h-2.5 w-2.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary"></span>
             </span>
-            Your Trusted Technology Partner
-          </div>
+            Custom software development studio
+          </p>
 
-          <h1 className="text-5xl md:text-7xl font-black text-foreground tracking-tight mb-6 leading-[1.1]">
-            We provide the best strategy to <br className="hidden md:block" />
+          <h1
+            id="hero-heading"
+            className="text-5xl md:text-7xl font-black text-foreground tracking-tight mb-6 leading-[1.1]"
+          >
+            We build software that <br className="hidden md:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-emerald-500 to-cyan-500">
-              grow your business
+              grows your business.
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Innovative software solutions tailored to help businesses thrive in a changing digital landscape. We design
-            intuitive apps for web, mobile, and desktop.
+            LifeCOMPILERS is a product-minded development studio. We design and build custom web, mobile, and desktop
+            applications for startups and growing businesses — from first MVP to scaled product.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
