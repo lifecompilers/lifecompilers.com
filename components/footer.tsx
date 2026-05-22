@@ -104,7 +104,7 @@ const Footer = () => {
             <time dateTime={LAST_MODIFIED.toISOString()}>Last updated: {LAST_UPDATED_LABEL}</time>
           </p>
           <p>
-            Made with <span style={{ color: "#f43f5e" }}>&#10084;</span> in India
+            Made with <span className="text-rose-500">&#10084;</span> in India
           </p>
         </div>
       </div>

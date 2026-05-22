@@ -10,9 +10,9 @@ const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono", disp
 
 const SITE_URL = "https://lifecompilers.com"
 const SITE_NAME = "LifeCOMPILERS"
-const SITE_TITLE = "Custom Software Development in Ratnagiri, India | LifeCOMPILERS"
+const SITE_TITLE = "Custom Software Development in India | LifeCOMPILERS"
 const SITE_DESCRIPTION =
-  "LifeCOMPILERS is a custom software development studio in Ratnagiri, India. We build web, mobile, and desktop applications with React, Next.js, and modern stacks for startups and growing businesses worldwide."
+  "LifeCOMPILERS builds custom web, mobile, and desktop software with React and Next.js. Based in Ratnagiri, India — serving startups worldwide."
 
 export const viewport: Viewport = {
   themeColor: [
