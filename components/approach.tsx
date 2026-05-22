@@ -52,9 +52,9 @@ const Approach = () => {
               feedback, and fast time-to-market. Clients own all source code and infrastructure from day one.
             </p>
 
-            <dl className="space-y-6">
+            <ul className="space-y-6 list-none p-0">
               {principles.map((item) => (
-                <div key={item.title} className="flex gap-5 items-start">
+                <li key={item.title} className="flex gap-5 items-start">
                   <div
                     aria-hidden="true"
                     className={`flex-shrink-0 w-12 h-12 rounded-xl ${item.iconBg} flex items-center justify-center ${item.iconColor}`}
@@ -62,12 +62,12 @@ const Approach = () => {
                     <item.icon size={24} />
                   </div>
                   <div>
-                    <dt className="text-xl font-bold text-foreground mb-2">{item.title}</dt>
-                    <dd className="text-muted-foreground">{item.desc}</dd>
+                    <h3 className="text-xl font-bold text-foreground mb-2">{item.title}</h3>
+                    <p className="text-muted-foreground">{item.desc}</p>
                   </div>
-                </div>
+                </li>
               ))}
-            </dl>
+            </ul>
           </div>
 
           <div className="relative">
