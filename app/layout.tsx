@@ -2,8 +2,14 @@ import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { GoogleAnalytics } from "@next/third-parties/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
+
+// GA4 Measurement ID. The ID itself is public (it ships in the gtag.js URL on
+// every page load), so checking it in is fine. Set NEXT_PUBLIC_GA_ID in Vercel
+// to override — useful if you want a separate stream for preview deploys.
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "G-XP74WS86MN"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans", display: "swap" })
 const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" })
@@ -110,6 +116,7 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
         <Analytics />
+        {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
       </body>
     </html>
   )
